@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Poppins,sans-serif;  
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+.nav{
+    height: 80px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    position: relative;
+
+}
+.nav h1{
+    color: #5B6B3A;
+    font-size: 40px;
+    padding-right: 80px;
+    
+    
+    
+}
+.nav-main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-item{
+    display: flex;
+    gap: 5vw;
+      
+}
+.nav-item h3{
+    font-weight: 500;
+}
+.nav-item span h3{
+    color: #5B6B3A;
+    font-weight: 600;
+}
+.nav-logo i{
+    padding:0 20px;
+    font-size: 25px;
+    
+    
+}
+.content{
+    height: 100%;
+    width: 100%;
+    padding: 60px 80px;
+    display: flex;
+    /* background-color: #F7F8F4;
+     */
+    
+}
+.title-desc{
+    width: 70%;
+    margin-right: 10%;
+}
+.title-desc h1{
+    font-size: 7vw;
+    color: #272D4E;
+    
+}
+.title-desc p{
+    font-size: 1.2vw;
+    color: #5E5E5E;
+    
+}
+.title-desc button{
+    font-size: 1vw;
+    background-color: #5B6B3A;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 40px;
+    margin-top: 10vh;
+    height: 60px;
+}
+.home-img{
+    width: 30%;
+    
+
+    
+}
+
+.plant-box{
+   position: relative;
+   display:flex;
+   flex-wrap: wrap;
+
+   
+   
+}
+.box{
+    height: 280px;
+    width: 200px;
+    background-color: #5e5e5e17;
+    overflow: visible;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+}
+.box img {
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    
+}
+.box:hover {
+    box-shadow: 0 8px 16px 0 #5B6B3A;
+    transition: all ease .2s;
+    transform: scale(1.1);
+  }
+
+@media (max-width :600px) {
+    .nav-item{
+        display: none;
+    }
+    .nav-logo{
+        display: none;
+    }
+    #menu i{ 
+        display: inline;
+        color: #000;
+        size:3vw;
+        font-weight: 500;
+        text-align: right;
+        
+        
+    }
+    .title-desc p{
+        font-size: 4vw;
+    }
+    .title-desc button{
+        font-size: 4vw;    
+        height: 60px;
+    }
+    .plant-box{
+        flex-direction: column;
+
+    }
+    .home-img img{
+       
+        display: none;
+    }
+
+    
+
+}
